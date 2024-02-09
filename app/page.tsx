@@ -75,7 +75,7 @@ export default function Home() {
     console.log({ values });
   };
   return (
-    <main className=" flex  flex-col  justify-between container pt-40 px-4">
+    <main className=" flex  flex-col  justify-between container pt-40 px-4 ">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(handleSubmit)}
@@ -241,7 +241,7 @@ export default function Home() {
             </RadioGroup>
           </div>
           {/* Payer Details */}
-          <div
+          {/* <div
             className={cn(" flex flex-col gap-4", {
               hidden: formStep < 3 || formStep > 3,
             })}
@@ -309,7 +309,7 @@ export default function Home() {
                 );
               }}
             />
-          </div>
+          </div> */}
           {/* Buttons */}
           <div className="flex flex-row max-w-lg justify-between space-x-4">
             <div className="mt-12 w-72">
